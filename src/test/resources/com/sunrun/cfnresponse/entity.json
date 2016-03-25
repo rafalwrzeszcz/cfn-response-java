@@ -1,0 +1,12 @@
+{
+  "LogicalResourceId":"logical-id-123",
+  "StackId":"stack-id-123",
+  "RequestId":"request-id-123",
+  "Data":{
+    "FieldOne":"value one",
+    "FieldTwo":"value two"
+  },
+  "PhysicalResourceId":"log-stream-name-123",
+  "Reason":"See the details in CloudWatch Log Stream: log-stream-name-123",
+  "Status":"SUCCESS"
+}

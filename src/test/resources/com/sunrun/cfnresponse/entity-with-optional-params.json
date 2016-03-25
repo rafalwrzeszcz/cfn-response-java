@@ -1,0 +1,12 @@
+{
+  "LogicalResourceId":"logical-id-123",
+  "StackId":"stack-id-123",
+  "RequestId":"request-id-123",
+  "Data":{
+    "FieldOne":"value one",
+    "FieldTwo":"value two"
+  },
+  "PhysicalResourceId":"custom-physical-resource-id-123",
+  "Reason":"my custom reason",
+  "Status":"SUCCESS"
+}
