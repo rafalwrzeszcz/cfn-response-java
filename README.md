@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/SunRun/cfn-response-java.svg?branch=master)](https://travis-ci.org/SunRun/cfn-response-java)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.sunrun/cfn-response/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.sunrun/cfn-response)
+[![License](https://img.shields.io/github/license/SunRun/cfn-response-java.svg)](LICENSE)
 # cfn-response-java
 A utility for using Cloudformation with Java8-based AWS lambdas as custom resources
 
