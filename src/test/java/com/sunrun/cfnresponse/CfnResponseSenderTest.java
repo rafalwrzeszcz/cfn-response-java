@@ -80,6 +80,21 @@ public class CfnResponseSenderTest {
         assertTrue(result);
         testHelper("entity.json");
     }
+
+    /**
+     * Test standard use case with FAILURE status.
+     * Sender should still return false, however, data sent to CloudFormation
+     * should have FAILURE as the value of status
+     * 
+     * @throws IOException
+     * @throws JSONException
+     */
+    @Test
+    public void testSendFailureStatus() throws IOException, JSONException {
+        final boolean result = sender.send(event, Status.FAILURE, context, reason, data, physicalResourceId);
+        assertTrue(result);
+        testHelper("entity-failure.json");
+    }
     
     /**
      * reason and physicalId are overridable. Test they can be overriden properly
