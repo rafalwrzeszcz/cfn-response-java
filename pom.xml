@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sunrun</groupId>
   <artifactId>cfn-response</artifactId>
-  <version>1.0.0</version>  
+  <version>1.0.2-SNAPSHOT</version>  
   <packaging>jar</packaging>
   <name>Cloudformation Response Java</name>
   <description>A utility for using Cloudformation with Java8-based lambdas as custom resources</description>
@@ -28,6 +26,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
     <connection>scm:git:git@github.com:SunRun/cfn-response-java.git</connection>
     <developerConnection>scm:git:git@github.com:SunRun/cfn-response-java.git</developerConnection>
     <url>git@github.com:SunRun/cfn-response-java.git</url>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
