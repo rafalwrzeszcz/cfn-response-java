@@ -63,7 +63,7 @@ public class CfnResponseSender {
         // Compose response
         final CfnResponse<T> response = new CfnResponse<>();
         response.setData(data);
-        response.setStatus(Status.SUCCESS);
+        response.setStatus(status);
         response.setLogicalResourceId(event.getLogicalResourceId());
         response.setPhysicalResourceId(physicalResourceId == null ? context.getLogStreamName() : physicalResourceId);
         response.setReason(reason == null ? "See the details in CloudWatch Log Stream: " + context.getLogStreamName() : reason);
