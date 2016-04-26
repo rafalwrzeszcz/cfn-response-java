@@ -18,7 +18,7 @@ To use, include the following Maven dependency in your project
     <dependency>
       <groupId>com.sunrun</groupId>
       <artifactId>cfn-response</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
 ```
 
