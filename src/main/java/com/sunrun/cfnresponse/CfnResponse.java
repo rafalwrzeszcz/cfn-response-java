@@ -1,7 +1,7 @@
 package com.sunrun.cfnresponse;
 
 /**
- * Marshaling class for JSON response to the pre-signed S3 ResponseURL provided in a 
+ * Marshaling class for JSON response to the pre-signed S3 ResponseURL provided in a
  * Cfn lambda invocation payload
  */
 public class CfnResponse<T> {
@@ -12,8 +12,9 @@ public class CfnResponse<T> {
     private String PhysicalResourceId;
     private Status Status;
     private String Reason;
+    private boolean NoEcho;
     private T Data;
-    
+
     public String getStackId() {
         return StackId;
     }
@@ -69,5 +70,12 @@ public class CfnResponse<T> {
     public void setData(final T data) {
         Data = data;
     }
-}
 
+    public Boolean getNoEcho() {
+        return NoEcho;
+    }
+
+    public void setNoEcho(final Boolean noEcho) {
+        NoEcho = noEcho;
+    }
+}

@@ -18,7 +18,7 @@ To use, include the following Maven dependency in your project
     <dependency>
       <groupId>com.sunrun</groupId>
       <artifactId>cfn-response</artifactId>
-      <version>1.0.2</version>
+      <version>1.1.0</version>
     </dependency>
 ```
 
@@ -36,6 +36,11 @@ public MyCustomResponse myHandler(final CfnRequest<MyCustomRequest> request, fin
     
     return response;
 }
+```
+
+If you wish to enable NoEcho to mask the output of the custom resource, when retrieved by using the Fn::GetAtt function, then set the NoEcho paramter to true.
+```java
+sender.send(request, Status.SUCCESS, context, null, response, null, true);
 ```
 
 # Debugging

@@ -8,5 +8,6 @@
   },
   "PhysicalResourceId":"custom-physical-resource-id-123",
   "Reason":"my custom reason",
-  "Status":"SUCCESS"
+  "Status":"SUCCESS",
+  "NoEcho": true
 }

@@ -8,5 +8,6 @@
   },
   "PhysicalResourceId":"log-stream-name-123",
   "Reason":"See the details in CloudWatch Log Stream: log-stream-name-123",
-  "Status":"SUCCESS"
+  "Status":"SUCCESS",
+  "NoEcho": false
 }
