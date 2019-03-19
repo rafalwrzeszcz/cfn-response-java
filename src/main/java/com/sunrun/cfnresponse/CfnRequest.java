@@ -11,6 +11,7 @@ public class CfnRequest<T> {
     public String StackId;
     public String RequestId;
     public String LogicalResourceId;
+    public String PhysicalResourceId;
     public String ResourceType;
 
     public T getResourceProperties() {
@@ -48,6 +49,12 @@ public class CfnRequest<T> {
     }
     public void setLogicalResourceId(final String logicalResourceId) {
         LogicalResourceId = logicalResourceId;
+    }
+    public String getPhysicalResourceId() {
+        return PhysicalResourceId;
+    }
+    public void setPhysicalResourceId(final String physicalResourceId) {
+        PhysicalResourceId = physicalResourceId;
     }
     public String getResourceType() {
         return ResourceType;
