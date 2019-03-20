@@ -1,5 +1,7 @@
 package com.sunrun.cfnresponse;
 
+import javax.annotation.Nullable;
+
 /**
  * Cfn request class
  *
@@ -11,7 +13,7 @@ public class CfnRequest<T> {
     public String StackId;
     public String RequestId;
     public String LogicalResourceId;
-    public String PhysicalResourceId;
+    @Nullable public String PhysicalResourceId;
     public String ResourceType;
 
     public T getResourceProperties() {
@@ -50,10 +52,10 @@ public class CfnRequest<T> {
     public void setLogicalResourceId(final String logicalResourceId) {
         LogicalResourceId = logicalResourceId;
     }
-    public String getPhysicalResourceId() {
+    public @Nullable String getPhysicalResourceId() {
         return PhysicalResourceId;
     }
-    public void setPhysicalResourceId(final String physicalResourceId) {
+    public void setPhysicalResourceId(@Nullable final String physicalResourceId) {
         PhysicalResourceId = physicalResourceId;
     }
     public String getResourceType() {
